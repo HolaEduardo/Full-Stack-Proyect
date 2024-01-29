@@ -1,0 +1,76 @@
+<div class="container">
+  <app-header></app-header>
+</div>
+<div class="container-fluid mb-xl-5 vh-100 w-100">
+  <img class="shapes opacity-75 pl-2" src="../../../../assets/img/logo_kolab.png" />
+  <img class="path" src="assets/img/blob.png" />
+  <img class="shapes triangle" src="assets/img/triunghiuri.png" />
+  <img class="shapes circle" src="assets/img/cercuri.png" />
+  <div class="container mt-xl-5"></div>
+  <div class="container">
+    <div class="container mt-md-5 justify-content-center align-items-center">
+      <div class="col-xl-12 mt-md-5 pt-xl-5 text-center mb-xl-5">
+        <p class="lead">
+          <a class="btn btn-primary btn-simple btn-round text-success" data-toggle="modal" data-target="#myModal1">
+            Conoce el futuro <i class="fas fa-i-cursor"></i>
+          </a>
+        </p>
+        <h4 class="title text-center mt-md-3">
+          <small>PRIMERA KOLABORATIVA EN LATAM ESPECIALIZADA EN</small>
+        </h4>
+        <h3 class="break-on-small-screen">
+          Investigación, Desarrollo y testeo de Inteligencia Artificial, Cloud y Blockchain
+        </h3>
+        <h4 class="lead text-white mb-1">
+          Hola, soy
+          <span>
+            <a href="#eva" class="h5 text-success"><strong>E.V.A</strong></a>
+          </span>, el primer modelo de aprendizaje automático integral de LATAM.<br>
+        </h4>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid px-0">
+    <carousel
+      [itemsPerSlide]="itemsPerSlide"
+      [singleSlideOffset]="singleSlideOffset"
+      [interval]="0"
+      [noWrap]="noWrap"
+      [showIndicators]="showIndicators"
+    >
+      <slide *ngFor="let slide of slides; let index = index">
+        <img
+          [src]="slide.image"
+          alt="image slide"
+          style="display: block; width: 100%"
+        />
+        <div class="carousel-caption"></div>
+      </slide>
+    </carousel>
+  </div>
+  <section class="container">
+    <app-kolaboraty-model></app-kolaboraty-model>
+    <app-suite></app-suite>
+  </section>
+
+  <section class="container">
+    <app-artis></app-artis>
+    <app-aiadin></app-aiadin>
+  </section>
+
+  <section class="container justify-content-center align-items-center">
+    <app-contact-form></app-contact-form>
+  </section>
+</div>
+
+<app-footer></app-footer>
+
+<div aria-hidden="true" aria-labelledby="myModalLabel" bsModal class="modal fade modal-black" #myModal1="bs-modal" id="myModal1" role="dialog" tabindex="-1">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <app-login></app-login>
+    </div>
+  </div>
+</div>

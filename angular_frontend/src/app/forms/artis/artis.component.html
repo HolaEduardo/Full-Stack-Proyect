@@ -1,0 +1,89 @@
+<h2 id="artis" class="h2 text-success text-left mt-xl-5 pt-xl-5">
+    Modelo E.V.A A.i-rtis
+  </h2>
+  <p class="text-left">
+    <strong class="text-success">E.V.A A.i-rtis</strong> es un modelo de
+    aprendizaje automático integrado en la suite de diseño de Colab,
+    donde podrás crear imágenes a partir de una descripción de texto natural.
+    El modelo está en entrenamiento para colaborar junto a otras inteligencias
+    artificiales, con el objetivo de mejorar su precisión y la calidad de la
+    imagen, además de filtrar contenido inapropiado. Con E.V.A-Artis, puedes
+    crear textos profesionales de alta calidad y agregar un toque artístico
+    único a tus proyectos o empresa.
+  </p>
+  <br />
+  <ul class="list-unstyled mt-0">
+    <li class="pt-0">
+      <div class="d-flex align-items-center">
+        <div class="icon icon-success mb-2">
+          <i class="tim-icons icon-vector"> </i>
+        </div>
+        <div class="ml-3">
+          <h6>Piensa en algo y dale un estilo.</h6>
+        </div>
+      </div>
+    </li>
+    <li class="pt-0">
+      <div class="d-flex align-items-center">
+        <div class="icon icon-success mb-2">
+          <i class="tim-icons icon-single-02"> </i>
+        </div>
+        <div class="ml-3">
+          <h6>Describe tu idea desde adelante hacia el fondo.</h6>
+        </div>
+      </div>
+    </li>
+    <li class="pt-0">
+      <div class="d-flex align-items-center">
+        <div class="icon icon-success mb-2">
+          <i class="tim-icons icon-tap-02"> </i>
+        </div>
+        <div class="ml-3">
+          <h6>Clickea y espera tu creación!</h6>
+        </div>
+      </div>
+    </li>
+  </ul>
+<form [formGroup]="form" (ngSubmit)="submit(template)">
+    <div class="form-group text-white text-left font-weight-bold mt-5">
+      <label
+        >Crea una pintura, un dibujo o una pieza de arte como te la puedas
+        imaginar</label
+      >
+      <textarea
+        value="prompt"
+        formControlName="prompt"
+        class="form-control"
+        style="height: 500px"
+        placeholder="E.V.A Artis, quiero una imagen de un perro con alas de águila y un fondo de bosque."
+      ></textarea>
+    </div>
+    <button
+      class="btn btn-primary btn-simple btn-round mt-4 w-100"
+      type="submit"
+    >
+      Crea con E.V.A A.i-rtis
+    </button>
+  </form>
+  <ng-template #template>
+    <div class="fixed-top mt-xl-5">
+      <div class="modal-header">
+        <h4 class="modal-title pull-left">Resultado de tu Imagen</h4>
+      </div>
+      <div class="card modal-body">
+        <img
+          [src]="imageUrl"
+          alt="Imagen generada"
+          *ngIf="imageUrl"
+          class="img-responsive"
+        />
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="anonimo" />
+          <label class="form-check-label" for="anonimo"
+            >La imágen se presentará en aproximádamente 30 segúndos</label
+          >
+        </div>
+      </div>
+    </div>
+  </ng-template>
+  <!-- Modal para Login -->

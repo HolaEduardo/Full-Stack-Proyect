@@ -1,0 +1,117 @@
+/*
+=========================================================
+* BLK Design System Angular - v1.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/blk-design-system-angular
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ */
+
+// Core
+$custom-file-text: ();
+@import "kolaboraty/custom/functions";
+@import "kolaboraty/bootstrap/functions";
+
+@import "kolaboraty/custom/variables";
+@import "kolaboraty/bootstrap/variables";
+
+@import "kolaboraty/custom/mixins";
+@import "kolaboraty/bootstrap/mixins";
+
+// Bootstrap components
+
+@import "kolaboraty/bootstrap/root";
+@import "kolaboraty/bootstrap/reboot";
+@import "kolaboraty/bootstrap/type";
+@import "kolaboraty/bootstrap/images";
+@import "kolaboraty/bootstrap/code";
+@import "kolaboraty/bootstrap/grid";
+@import "kolaboraty/bootstrap/tables";
+@import "kolaboraty/bootstrap/forms";
+@import "kolaboraty/bootstrap/buttons";
+@import "kolaboraty/bootstrap/transitions";
+@import "kolaboraty/bootstrap/dropdown";
+@import "kolaboraty/bootstrap/button-group";
+@import "kolaboraty/bootstrap/input-group";
+@import "kolaboraty/bootstrap/custom-forms";
+@import "kolaboraty/bootstrap/nav";
+@import "kolaboraty/bootstrap/navbar";
+@import "kolaboraty/bootstrap/card";
+@import "kolaboraty/bootstrap/breadcrumb";
+@import "kolaboraty/bootstrap/pagination";
+@import "kolaboraty/bootstrap/badge";
+@import "kolaboraty/bootstrap/jumbotron";
+@import "kolaboraty/bootstrap/alert";
+@import "kolaboraty/bootstrap/progress";
+@import "kolaboraty/bootstrap/media";
+@import "kolaboraty/bootstrap/list-group";
+@import "kolaboraty/bootstrap/close";
+@import "kolaboraty/bootstrap/modal";
+@import "kolaboraty/bootstrap/tooltip";
+@import "kolaboraty/bootstrap/popover";
+@import "kolaboraty/bootstrap/carousel";
+@import "kolaboraty/bootstrap/utilities";
+@import "kolaboraty/bootstrap/print";
+
+// Custom components
+
+@import "kolaboraty/custom/alerts.scss";
+@import "kolaboraty/custom/buttons.scss";
+@import "kolaboraty/custom/dropdown.scss";
+@import "kolaboraty/custom/footer.scss";
+@import "kolaboraty/custom/forms.scss";
+@import "kolaboraty/custom/images.scss";
+@import "kolaboraty/custom/modal.scss";
+@import "kolaboraty/custom/navbar.scss";
+@import "kolaboraty/custom/type.scss";
+@import "kolaboraty/custom/icons.scss";
+@import "kolaboraty/custom/tables";
+@import "kolaboraty/custom/checkboxes-radio";
+@import "kolaboraty/custom/fixed-plugin";
+@import "kolaboraty/custom/pagination.scss";
+@import "kolaboraty/custom/misc.scss";
+@import "kolaboraty/custom/rtl.scss";
+@import "kolaboraty/custom/input-group.scss";
+@import "kolaboraty/custom/example-pages.scss";
+@import "kolaboraty/custom/progress.scss";
+@import "kolaboraty/custom/badge.scss";
+@import "kolaboraty/custom/pills.scss";
+@import "kolaboraty/custom/tabs.scss";
+@import "kolaboraty/custom/info-areas.scss";
+
+// Sections
+@import "kolaboraty/custom/sections.scss";
+
+// Vendor / Plugins
+
+@import "kolaboraty/custom/vendor/plugin-perfect-scrollbar.scss";
+@import "kolaboraty/custom/vendor/plugin-animate-bootstrap-notify.scss";
+@import "kolaboraty/custom/vendor/plugin-bootstrap-switch.scss";
+@import "kolaboraty/custom/vendor/plugin-nouislider.scss";
+@import "kolaboraty/custom/vendor/plugin-datetimepicker.scss";
+
+// Cards
+
+@import "kolaboraty/custom/card";
+@import "kolaboraty/custom/cards/card-chart";
+@import "kolaboraty/custom/cards/card-map";
+@import "kolaboraty/custom/cards/card-user";
+@import "kolaboraty/custom/cards/card-task";
+@import "kolaboraty/custom/cards/card-plain";
+@import "kolaboraty/custom/cards/card-register";
+@import "kolaboraty/custom/cards/card-stats";
+@import "kolaboraty/custom/cards/card-chart";
+
+// Angular changes
+@import "kolaboraty/angular/tabs";
+@import "kolaboraty/angular/pills";
+@import "kolaboraty/angular/alerts";
+@import "kolaboraty/angular/datepicker";
+@import "kolaboraty/angular/example-pages";

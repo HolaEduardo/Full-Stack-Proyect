@@ -1,0 +1,38 @@
+<h2 id="aiadin" class="h2 text-success text-left mt-xl-5 pt-xl-5">
+Modelo E.V.A Ai-din
+</h2>
+<h5 class="description text-left">
+E.V.A Aladin es otra herramienta inteligente integrada en la suite de
+Colab, diseñada para responder a cualquier pregunta que puedas tener.
+Utilizando tecnologías avanzadas de procesamiento del lenguaje natural,
+E.V.A Aladin puede entender y responder a consultas en lenguaje coloquial,
+ofreciendo soluciones, información y orientación en una amplia variedad de
+temas. Ya sea que necesites ayuda con un proyecto empresarial, asistencia
+en la investigación o simplemente estés curioso acerca de algo, E.V.A
+Aladin está programado para asistirte de manera eficiente y precisa. Es
+como tener a un experto en múltiples campos a tu disposición en cualquier
+momento.
+</h5>
+<form [formGroup]="form1" (ngSubmit)="Completion()">
+  <div class="form-group text-white text-left font-weight-bold mt-5">
+    <label>Resuelve todas tus dudas</label>
+    <textarea
+      value="prompt"
+      formControlName="prompt"
+      class="form-control"
+      style="height: 500px"
+      placeholder="Cuánto se demora la luz desde el sol a la tierra?"
+    ></textarea>
+  </div>
+  <div class="btn-wrapper">
+    <button
+      type="submit"
+      class="btn btn-primary btn-simple btn-round mt-4 w-100"
+      target="_blank"
+    >
+      Consulta a E.V.A A.i-din
+    </button>
+  </div>
+</form>
+<br>
+<p class="text-center"> {{ displayText }} </p>

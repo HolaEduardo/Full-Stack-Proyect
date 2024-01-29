@@ -1,0 +1,54 @@
+<div class="m-xl-5 p-xl-5">
+  <div class="row">
+    <div class="col-md-12">
+      <div class="card card-plain">
+        <div class="card-header">
+          <h1 class="profile-title text-left">Hablemos</h1>
+        </div>
+        <div class="card-body">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Nombre</label>
+                  <input class="form-control" type="text" placeholder="E.V.A te responde" formControlName="name" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label>Correo</label>
+                  <input class="form-control" placeholder="eva@Colab.com" type="email" formControlName="email" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label> Teléfono </label>
+                  <input class="form-control" type="text" value="+56" formControlName="phone" />
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <label> Compañía </label>
+                  <input class="form-control" type="text" placeholder="Colab" formControlName="company" />
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="form-group">
+                  <label> Mensaje </label>
+                  <input class="form-control" placeholder="Hola Eva!" type="text" formControlName="message" />
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary btn-simple btn-round" type="submit">
+              {{ button }}
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
